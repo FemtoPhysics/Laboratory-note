@@ -3,8 +3,10 @@ Laboratory Note
 
 - [Home](/HyGZvCDT5)
 
-Topic 1
+DSP Notes
 ---
+
+- [Deal with Oscillations](/rkPDHrFpc)
 
 Topic 2
 ---
