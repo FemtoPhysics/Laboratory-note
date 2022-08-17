@@ -2,6 +2,7 @@ Laboratory Note
 ===
 
 - [Home](/HyGZvCDT5)
+- [How to Contribute](/HkDHWBqCc)
 
 Error Analysis Notes
 ---

@@ -1,7 +1,6 @@
 # DSP EP1 - Deal with Oscillations
 Author: [yctai](brianyjtai1994@gmail.com)
-
----
+- - -
 It is common to encounter a damped oscillation in signal processing of pump-probe spectroscopy. This note is a showcase to demonstrate how to deal with signals that contain damped oscillations.
 
 ## Case 1: Single Oscillation

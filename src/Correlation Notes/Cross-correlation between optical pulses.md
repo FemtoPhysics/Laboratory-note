@@ -1,5 +1,6 @@
 # Cross-correlation between optical pulses
-
+Author: [weihong](https://github.com/Wei-Hong0211)
+- - -
 ## 1.1 The arrival time depends on the incident angle of a pulse
 First, assume an ideal plane-wave pulsem which can be described in
 $$
