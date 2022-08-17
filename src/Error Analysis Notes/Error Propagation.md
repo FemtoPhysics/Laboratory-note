@@ -2,7 +2,7 @@
 Author: [yihung](johnsonlin0528.c@nycu.edu.tw)
 _ _ _
 ## Why we use Error propagate
-![[https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/Error%20Analysis%20Notes/img/snapshot.png]]
+![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/Error%20Analysis%20Notes/img/snapshot.png)
 [(source)](https://www.youtube.com/watch?v=V0ZRvvHfF0E)
 
 當我們要計算動能的精確值時，會需要使用到質量跟速度這兩個物理量，而我們在得到這兩個物理量時可能因為儀器或其他原因，而導致得到物理量有誤差，而我們為了想準確的知道這些誤差會帶給動能有什麼影響，因此需要利用誤差傳遞。
@@ -82,11 +82,10 @@ $$
 $$
 
 利用上式，可以將以下四個例子計算出他們各自的誤差
-![[https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/Error%20Analysis%20Notes/img/example.png]]
+![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/Error%20Analysis%20Notes/img/example.png)
 [(source)](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Supplemental_Modules_(Analytical_Chemistry)/Quantifying_Nature/Significant_Digits/Propagation_of_Error)
 
 可將此 $\sigma_{X}$ 值視為測得的平均值之精密度(或誤差)最佳估計。通常以$\bar{X} ± \sigma_{X}$表示某一物理量 x 的測量值。
-
 
 ## Example
 $$
