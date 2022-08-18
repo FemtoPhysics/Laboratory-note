@@ -1,14 +1,64 @@
 # How to Contribute Your Notes
 作者: [yctai](brianyjtai1994@gmail.com), [yihung](johnsonlin0528.c@nycu.edu.tw), [weihong](https://github.com/Wei-Hong0211)
 - - -
-## 1. 準備 [Github](https://github.com) 工作環境
+## 1. 筆記統整結構 Hierarchical Structure of Notes
+:::info
+**為什麼需要知道這個？**
+
+在未來筆記越來越多之後，方便大家
+1. 把新的筆記 `commit` 到對的位置、
+2. 能夠快速找出舊的筆記編輯。
+:::
+
+1. 筆記只有簡單的雙層結構：
+	1. 資料夾作為筆記按照主題的分類依據。
+	2. 資料夾內的 [markdown](https://www.markdownguide.org) 檔案作為筆記原始檔。
+2. 儲存在 [Github](https://github.com/FemtoPhysics/Laboratory-note.git) 上的筆記原始檔記錄了<font color=firebrick>**每一份筆記**的**所有**歷史紀錄</font>，任何人都可以查閱任何一個筆記在過去經歷了哪些變動，以便編輯和維護。
+
+- 以下是筆記原始檔在 [Github](https://github.com/FemtoPhysics/Laboratory-note.git) 上的儲存方式：
+    ```shell
+    Laboratory-note
+    ├── LICENSE
+    ├── README.md
+    └── src
+        ├── Correlation Notes/ # 用資料夾分類筆記
+        │   ├── ⋮
+        │   └── Cross-correlation between optical pulses.md # 筆記.md
+        │
+        ├── DSP Notes/ # 用資料夾分類筆記
+        │   ├── DSP EP1 - Deal with Oscillations.md # 筆記.md
+        │   ├── ⋮
+        │   └── img/ # 圖片資料夾，這個分類筆記共用的圖片
+        │       ├── ⋮
+        │       └── *.png
+        │
+        ├── Error Analysis Notes/ # 用資料夾分類筆記
+        │   ├── Error Propagation.md # 筆記.md
+        │   ├── ⋮
+        │   └── img/ # 圖片資料夾，這個分類筆記共用的圖片
+        │       ├── ⋮
+        │       └── *.png
+        │
+        ├── ⋮
+        ├── home-page.md
+        ├── how-to-contribute.md
+        └── img
+            ├── ⋮
+            └── *.png
+    ```
+
+- 這些筆記原始檔的呈現方式是：
+
+	![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/img/000.png)
+
+## 2. 準備 [Github](https://github.com) 工作環境
 > 以下教學只包含 `Windows` 作業系統的部分，如果你正在使用 `macOS / Linux` 作業系統，請和 [yctai](brianyjtai1994@gmail.com) 聯絡。
 
-### 1.1 網路上的部分
+### 2.1 網路上的部分
 1. 首先，先到 [Github](https://github.com) 註冊一個你的帳號。
 2. 然後用瀏覽器打開大家的**筆記原始檔**[存放區](https://github.com/FemtoPhysics/Laboratory-note.git) (`repo`)
 	- `Laboratory-note` 是 `repo` 的名字，擁有者是 `FemtoPhysics`
-	- 只有管理者有權限可以**直接**編輯 `repo`，而你可以利用 `Fork` **複製** 一個 `repo` 到自己的帳號以便自己編輯
+	- 只有管理者有權限可以**直接**編輯 `repo`，而你可以利用 `Fork` **複製** 一個 `repo` 到自己的帳號以便自己編輯。
 
 	![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/img/001.png)
 
@@ -16,13 +66,13 @@
 
 	![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/img/002.png)
 
-### 1.2 自己電腦的部分
-1. 首先，先下載 [Github](https://github.com)的桌面軟體 [`GitHub Desktop`](https://desktop.github.com)，並且登入你的 Github 帳號
+### 2.2 自己電腦的部分
+1. 首先，先下載 [Github](https://github.com) 的桌面軟體 [`GitHub Desktop`](https://desktop.github.com)，並且登入你的 Github 帳號。
 	> 這不是功能最完整的桌面軟體，而是最好上手的
 
 	![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/img/003.png)
 
-2. 接著，你應該能在**右手邊**找到你剛剛 `Fork` 的 `repo`；如果沒有的話，你可以**重新整理**一下
+2. 接著，你應該能在**右手邊**找到你剛剛 `Fork` 的 `repo`；如果沒有的話，你可以**重新整理**一下。
 
 	![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/img/004.png)
 
@@ -37,10 +87,10 @@
 
 	![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/img/007.png)
 
-## 2. 上傳筆記
-### 2.1 新增筆記
-#### 2.1.1 新增電腦的筆記到 `<你的帳號>/Laboratory-note`
-1. Github `repo` 本身有記錄狀態的機制，剛剛 `clone` 到電腦裡的 `repo` 和遠端的狀態是一致的，所以**左手邊** `Changes` 標籤中是**空**的狀態
+## 3. 上傳筆記
+### 3.1 新增筆記
+#### 3.1.1 新增電腦的筆記到 `<你的帳號>/Laboratory-note`
+1. Github `repo` 本身有記錄狀態的機制，剛剛 `clone` 到電腦裡的 `repo` 和遠端的狀態是一致的，所以**左手邊** `Changes` 標籤中是**空**的狀態。
 
 	![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/img/008.png)
 
@@ -48,7 +98,7 @@
 
 	![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/img/009.png)
 
-3. 重新回到 `GitHub Desktop`，就會在**左手邊** `Changes` 標籤找到新的檔案
+3. 重新回到 `GitHub Desktop`，就會在**左手邊** `Changes` 標籤找到新的檔案。
 
 	![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/img/010.png)
 
@@ -59,12 +109,12 @@
 
 	![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/img/011.png)
 
-5. 剛剛送出的 `commit` 是在你的電腦的 `repo` 完成的，遠端的 `<你的帳號>/Laboratory-note` 並沒有被同步，還需要用 `Push` 完成遠端上傳
+5. 剛剛送出的 `commit` 是在你的電腦的 `repo` 完成的，遠端的 `<你的帳號>/Laboratory-note` 並沒有被同步，還需要用 `Push` 完成遠端上傳。
 
 	![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/img/012.png)
 
 6. 在 `History` 的標籤中確認你的 `commit` 沒有問題後，用 `Push origin` 上傳到遠端的 `<你的帳號>/Laboratory-note`
-	> 只要還沒 `Push`，如果發現問題，都可以 `右鍵 -> undo commit` 取消你做的 `commit`，完成修改之後再重新 `commit` 即可 (步驟 4)
+	> 只要還沒 `Push`，如果發現問題，都可以 `右鍵 → undo commit` 取消你做的 `commit`，完成修改之後再重新 `commit` 即可 (步驟 4)
 
 	![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/img/013.png)
 
@@ -72,7 +122,7 @@
 
 	![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/img/014.png)
 
-#### 2.1.2 同步 `<你的帳號>/Laboratory-note` 到 `FemtoPhysics/Laboratory-note`
+#### 3.1.2 同步 `<你的帳號>/Laboratory-note` 到 `FemtoPhysics/Laboratory-note`
 1. 完成 `Push` 後，`<你的帳號>/Laboratory-note` 會有新的變化 → 點選 `1 commit ahead`
 
 	![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/img/015.png)
