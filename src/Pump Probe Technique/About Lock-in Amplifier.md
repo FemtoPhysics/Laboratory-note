@@ -1,7 +1,7 @@
 # What is Lock-in Amplifier
 Author: Sun J-Y
 
-![[https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/pump%20Probe%20Technique/Img/lock-in.png]]
+![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/Pump%20Probe%20Technique/img/lock-in.png)
 
 • Lock-in amplifiers are used to detect and measure very small AC signals-all the way down to a few nano-volts.
 
@@ -54,7 +54,7 @@ This is a very nice signal "it is a DC signal proportional to the signal amplitu
 
 Now, let's see the schematic for Lock-in.
 
-![[https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/pump%20Probe%20Technique/schematic for Lock-in.png]]
+![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/Pump%20Probe%20Technique/img/schematic%20for%20Lock-in.png)
 
 ###### For a very small AC signal of known frequency, Lock-in will make it pass a band-pass filter first  for cut noise, then use a reference signal to product it, and chang the reference wave's phase until the out put is DC signal.
 
@@ -65,28 +65,28 @@ This is how lock-in amplifiter work.
 ## Pump-Probe
 The main point of the pump-probe experiment is two femtosecond-pulse arrivals in the sample at the same time, then making a delay for one of them and seeing the difference ($\dfrac{∆A}{A}$).
 
-![[https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/pump%20Probe%20Technique/schematic for pump probe.png]]
+![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/Pump%20Probe%20Technique/img/schematic%20for%20pump%20probe.png)
 
 Image that, two events(pulse) happen in 1 ns.
 
-![[https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/pump%20Probe%20Technique/Two events image.png]]
+![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/Pump%20Probe%20Technique/img/Two%20events%20image.png)
 
 BUT! <font color=firebrick>**Note that**</font> The detector's exposures time is microsecond level.
 
 And two event will repeat again and again in detector's exposures time, finaly you will get a volt every few microsecond.
 
-![[https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/pump%20Probe%20Technique/about detector.png]]
+![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/Pump%20Probe%20Technique/img/about%20detector.png)
 
 Then, the Lock-in Amplifier collect signal from detector.
 
 //The square wave signal is based on AOM (kind of optical chopper), more detail you can finding from UDL master student's paper.
 
-![[https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/pump%20Probe%20Technique/the signal lock in get.png]]
+![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/Pump%20Probe%20Technique/img/the%20signal%20lock%20in%20get.png)
 
 So far so good, BUT in real case the signal not strong like that and a lot of noise will cover it.
 
-![[https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/pump%20Probe%20Technique/detector output.png]]
+![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/Pump%20Probe%20Technique/img/detector%20output.png)
 
 //This is why we need Lock-in Amplifier.
 
-![[https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/pump%20Probe%20Technique/schematic for Lock-in.png]]
+![](https://raw.githubusercontent.com/FemtoPhysics/Laboratory-note/main/src/Pump%20Probe%20Technique/img/schematic%20for%20Lock-in.png)
